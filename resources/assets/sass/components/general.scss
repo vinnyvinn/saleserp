@@ -1,0 +1,101 @@
+[role="main"] {
+  padding-top: 95px;
+}
+
+.content-page {
+  margin-left: 250px;
+  overflow: hidden;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+}
+.modal-header {
+  background: #226faa;
+  background: -webkit-gradient(linear,left top,right top,from(#226faa),color-stop(37%,#2989d8),to(#72c0d3));
+  background: linear-gradient(to right,#226faa 0,#2989d8 37%,#72c0d3 100%);
+  border-radius: 6px;
+  color: #fff;
+  padding: 18px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: transparent;
+}
+.settings-tabs {
+  list-style: none;
+  padding-bottom: 0;
+    margin-bottom: 25px;
+    background: 0 0;
+    border-radius: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(90,90,90,.08);
+    box-shadow: 0 1px 15px 1px rgba(90,90,90,.08);
+    li {
+      position: relative;
+      width: 100%;
+      display: block;
+     a {
+        border-bottom: 1px solid #e5e5e5;
+        margin-right: 0;
+        padding: 10px 17px 10px 17px;
+        border-right: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+        border-radius: 0;
+        font-weight: 400;
+        line-height: 1.42857143;
+        position: relative;
+        display: block;
+    }
+  }
+}
+//Hidden divs
+.showaccount {
+  display: none;
+}
+.lable-badge {
+  display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .3em .7em .3em;
+    font-size: .82rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.lable-badge-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.bold {
+  font-weight: 500;
+}
+.progress-bar-mini {
+  height: 5px!important;
+}
+.progress-bar.progress-bar-danger {
+  background-color: #fc2d42;
+}
+.progress-bar.progress-bar-success {
+  background-color: #84c529;
+}
+.progress-bar {
+  color: #fff;
+  background: rgb(3, 169, 244);
+}
+.top_stats_wrapper {
+  padding: 5px 15px 15px 15px;
+  width: 100%;
+}

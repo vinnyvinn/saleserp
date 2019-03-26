@@ -1,0 +1,218 @@
+
+// Fonts
+// Here you can import any font you want and update the _variables.scss file
+// to make use of those fonts across the application.
+//@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+//@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom Vanguard styles
+@import "components/general";
+@import "components/card";
+@import "components/button";
+@import "components/avatar";
+@import "components/input";
+@import "components/list-group";
+@import "components/nav-tabs";
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/switch";
+@import "components/sweet-alert";
+@import "components/table";
+@import "components/util";
+@import "components/datepicker";
+
+@include media-breakpoint-down(md) {
+  .sidebar:not(.expanded) {
+    margin-left: -250px;
+  }
+
+  .content-page {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+  .widget {
+    height: 128px;
+
+    .row .text-muted {
+      width: 80px;
+      text-align: right;
+      word-wrap: normal;
+    }
+  }
+}
+#header-menu {
+  margin-top: 70px;
+  clear: both;
+  background-color: #000066;
+  .navbar {
+    background: none;
+    border:none;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+#content {
+  margin-top: 10px;
+  background-color: $body-bg;
+}
+.sub-menu {
+  position: absolute;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #f1f8f9;
+  min-width: 230px;
+  z-index: 9;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  .nav-item {
+    &:hover {
+      color: #fff !important;
+      background-color: #000066;
+      .nav-link {
+        color: #fff !important;
+    }
+    }
+    .nav-link {
+      color: #000066 !important;
+  }
+  }
+}
+.modal-body {
+  padding: 2rem;
+  background-color: rgb(243, 242, 242);
+}
+.m-subheader {
+  padding: 30px 0 20px 0;
+  .m-subheader__title {
+    display: inline-block;
+    padding: 7px 25px 7px 0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.55rem;
+    font-weight: 500;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    color: #3f4047;
+}
+.m-subheader__daterange {
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  background: #f8f8fb;
+  .m-subheader__daterange-label {
+    padding: 0.7rem 0.75rem 0.7rem 1.5rem;
+}
+}
+}
+.hr-panel-heading {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 17px;
+}
+.card {
+  .card-title {
+    background: #f9fafc;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #e4e5e7;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 0;
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+    color: #656565;
+    .btn-outline-secondary {
+      color: #6c757d;
+      /* background-color: transparent; */
+      /* background-image: none; */
+      /* border-color: #6c757d; */
+      border: 1px solid rgb(221, 219, 218);
+      transition: border .15s linear;
+      border-color: rgb(221, 219, 218);
+      background-color: rgb(255, 255, 255);
+      &:hover {
+        background-color: rgb(243, 242, 242);
+        color: rgba(27, 82, 151, 1);
+      }
+  }
+  
+  }
+  .card-subheader {
+    padding: 1rem 1rem;
+    margin: 1rem -1rem -1rem;
+    margin-top: 0;
+    .other-details {
+      display: flex;
+      list-style: none;
+      li {
+        display: list-item;
+    text-align: -webkit-match-parent;
+    padding-right: 2rem;
+    span {
+      color: rgb(62, 62, 60);
+      font-size: .75rem;
+      padding-right: .5rem;
+      padding-top: .25rem;
+    }
+      }
+    }
+  }
+
+}
+.mrn-top-30 {
+  margin-top: 30px;
+}
+
+.customer-tabs {
+  li {
+    a {
+      .menu-icon {
+        font-size: 15px;
+        width: 12px;
+        margin-top: 1px;
+        margin-right: 16px;
+    }
+    }
+  }
+}
+//datatable fix
+.dataTables_wrapper {
+  
+  .dt-buttons {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .dataTables_filter {
+    display: inline-block;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .dataTables_info {
+    float: left;
+    padding-top: 3.1em !important;
+  }
+  .dataTables_length {
+    float: left;
+    padding-top: 3.1em;
+    padding-left: 10%;
+  }
+  .dataTables_paginate {
+  
+    margin-top: 50px !important;
+}
+}
