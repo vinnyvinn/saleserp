@@ -16,6 +16,7 @@ class CreateQuotationsTable extends Migration
         Schema::create('quotations', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('account_id')->nullable();
+            $table->string('quotationno')->unique();
             $table->unsignedInteger('lead_id')->nullable();
             $table->decimal('total_tax',11, 2)->nullable();
             $table->decimal('subtotal',11,2)->nullable();

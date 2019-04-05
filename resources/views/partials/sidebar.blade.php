@@ -72,6 +72,14 @@
                             </a>
                         </li>
                         @endpermission
+                        @permission('manage.quotations')
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('quotation*') ? 'active' : ''  }}" href="{{ route('quotations.index') }}">
+                                <i class="fas fa-list"></i>
+                                <span>Quotations</span>
+                            </a>
+                        </li>
+                        @endpermission
                         @permission(['roles.manage', 'permissions.manage'])
                         <li class="nav-item">
                             <a href="#roles-dropdown"
@@ -118,7 +126,16 @@
                                     </a>
                                 </li>
                                 @endpermission
-            
+                                
+                                @permission('settings.services')
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('service') ? 'active' : ''  }}"
+                                       href="{{ route('service.items') }}">
+                                       Service Items
+                                    </a>
+                                </li>
+                                @endpermission
+
                                 @permission('settings.auth')
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('settings/auth*') ? 'active' : ''  }}"

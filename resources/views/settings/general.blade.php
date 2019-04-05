@@ -63,6 +63,11 @@
                                                   <input type="text" class="form-control" id="app_vat"
                                                                        name="app_vat" value="{{ settings('app_vat') }}">
                                             </div>
+                                            <div class="form-group">
+                                                    <label for="name">Quotation Prefix</label>
+                                                    <input type="text" class="form-control" id="app_qpref"
+                                                                         name="app_qpref" value="{{ settings('app_qpref') }}">
+                                              </div>
                                         </div>
                                     </div>
                                 </div>

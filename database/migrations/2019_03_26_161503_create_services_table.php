@@ -17,6 +17,7 @@ class CreateServicesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->decimal('price',11,2);
+            $table->enum('type',['KPA','ALL','IMPORT','EXPORT']);
             $table->string('vat');
             $table->timestamps();
         });

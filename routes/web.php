@@ -101,6 +101,11 @@ Route::group(['middleware' => 'auth'], function () {
     ]  
     );
 
+    //Quotations
+    Route::resource('quotations', 'QuotationController');
+    Route::get('services/items', 'QuotationController@services')->name('service.items');
+    Route::post('services/item/create', 'QuotationController@addservices')->name('create.service');
+
     /**
      * User Profile
      */

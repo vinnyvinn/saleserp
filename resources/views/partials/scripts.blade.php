@@ -18,7 +18,9 @@ renderer:"bootstrap"});b.extend(f.ext.classes,{sWrapper:"dataTables_wrapper dt-b
     $('#datepicker').datepicker({
         uiLibrary: 'bootstrap4'
     });
+    
     $(document).ready(function(){
+        
         $("#myselection").change(function(){
    if($(this).val()=="Existing Business")
    {    

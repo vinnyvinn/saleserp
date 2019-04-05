@@ -22,6 +22,7 @@ mix.scripts([
     'public/vendor/jsvalidation/js/jsvalidation.js',
     'public/vendor/DataTables/datatables.min.js',
     'public/vendor/datepicker/js/gijgo.min.js',
+    'public/vendor/bootstrap-select/js/bootstrap-select.min.js',
     'public/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js',
     'public/assets/plugins/croppie/croppie.js',
     'public/assets/plugins/chatjs/Chart.bundle.min.js',
@@ -35,6 +36,7 @@ mix.styles([
     'public/assets/plugins/datepicker/css/gijgo.min.css',
     'public/assets/plugins/chatjs/Chart.min.css',
     'public/assets/vendor/calender/css/calendar.css',
+    'public/vendor/bootstrap-select/css/bootstrap-select.min.css',
     'public/assets/vendor/calender/css/calendar.print.css'
 ], 'public/assets/css/vendor.css');
 

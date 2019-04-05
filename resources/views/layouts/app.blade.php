@@ -58,5 +58,12 @@
     
 } );</script>
     @yield('scripts')
+    <script>
+        $(document).ready(function(){
+            $.fn.selectpicker.Constructor.BootstrapVersion = '4';
+             $('select').selectpicker();
+    });
+        </script>
+@yield('javascript')
 </body>
 </html>

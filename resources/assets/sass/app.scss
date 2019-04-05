@@ -214,5 +214,117 @@
   .dataTables_paginate {
   
     margin-top: 50px !important;
+  }
 }
+table.dataTable thead>tr>th {
+  color: #4e75ad;
+  background: #f6f8fa;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border-color: #ebf5ff!important;
+  font-size: 13px;
+  padding-top: 9px;
+  line-height: 1.42857143;
+  padding-bottom: 8px;
+}
+table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc {
+  background: #ebf5ff;
+  font-weight: 500;
+}
+.dataTables_length select, .uneditable-input, input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=file], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select.form-control, textarea.form-control {
+  border: 1px solid #bfcbd9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #494949;
+  font-size: 14px;
+  -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  line-height: 1;
+  height: 36px;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.dataTables_filter input:focus {
+  width: 160px!important;
+}
+.table>tbody>tr>td, .table>tfoot>tr>td {
+  padding: 10px 10px 5px 10px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border-top: 1px solid #ebf5ff;
+}
+.bootstrap-select .btn {
+  background: #fff!important;
+  border: 1px solid #bfcbd9!important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 4px 10px;
+  line-height: 2;
+  height: 36px;
+  text-transform: inherit;
+  padding-left: 10px;
+}
+.bootstrap-select .dropdown-toggle .filter-option {
+  position: static;
+  top: 0;
+  left: 0;
+  float: left;
+  padding-right: inherit;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  margin-right: 0;
+}
+.input-group-text {
+  border: 1px solid #bfcbd9;
+  background-color: #fbfdff;
+  color: #97a8be;
+}
+.dataTables_length select, .uneditable-input, input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=file], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select.form-control, textarea.form-control {
+  height: 37px;
+}
+#tab_logic .form-control[readonly],#tab_logic_total .form-control[readonly] {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.table.items thead {
+  background: #415164;
+  color: #fff;
+  border: 0;
+}
+.table.items thead>tr>th {
+  border: 0!important;
+  color: #fff!important;
+}
+.table.items .main {
+  margin-top: 35px;
+  background-color: #fbfdff;
+}
+.table.items .bootstrap-select .btn-default, .table.items input:not(.input-transparent), .table.items textarea {
+  border: 1px solid #bfcbd9!important;
+}
+table.items tr.main td {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.bottom-transaction {
+  background: #fbfdff;
+}
+.btn-bottom-toolbar {
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  -webkit-box-shadow: 0 -4px 1px -4px rgba(0,0,0,.1);
+  box-shadow: 0 -4px 1px -4px rgba(0,0,0,.1);
+  background: #fff;
+  width:82.5%;
+  z-index: 5;
+  border-top: 1px solid #ededed;
 }

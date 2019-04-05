@@ -65,7 +65,7 @@
                 </div>
                 <hr class="hr-panel-heading">
                     <div class="table-responsive">
-                            <table class="table table table-striped" style="width:100%" id="list">
+                            <table class="table table-leads" style="width:100%" id="list">
                                     <thead>
                                         <th>Name</th>
                                         <th>Company</th>
