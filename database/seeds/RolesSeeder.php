@@ -1,6 +1,7 @@
 <?php
 
-use Vanguard\Role;
+use Dsc\Role;
+
 use Illuminate\Database\Seeder;
 
 class RolesSeeder extends Seeder
@@ -12,6 +13,7 @@ class RolesSeeder extends Seeder
      */
     public function run()
     {
+        Role::truncate();
         Role::create([
             'name' => 'Admin',
             'display_name' => 'Admin',

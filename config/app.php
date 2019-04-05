@@ -194,6 +194,8 @@ return [
         Dsc\Providers\EventServiceProvider::class,
         Dsc\Providers\RouteServiceProvider::class,
         Dsc\Services\Auth\TwoFactor\AuthyServiceProvider::class,
+       // App\Providers\CountdownTimersServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class
 
     ],
 

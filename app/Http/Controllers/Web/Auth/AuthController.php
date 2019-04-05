@@ -337,7 +337,7 @@ class AuthController extends Controller
         // Add the user to database
         $user = $this->users->create(array_merge(
             $request->only('email', 'username', 'password'),
-            ['status' => $status, 'role_id' => $role->id]
+            ['status' => $status]
         ));
 
         event(new Registered($user));

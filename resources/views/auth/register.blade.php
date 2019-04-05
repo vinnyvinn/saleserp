@@ -124,5 +124,5 @@
 @stop
 
 @section('scripts')
-    {!! JsValidator::formRequest('Vanguard\Http\Requests\Auth\RegisterRequest', '#registration-form') !!}
+{{--   // {!! JsValidator::formRequest('Vanguard\Http\Requests\Auth\RegisterRequest', '#registration-form') !!}--}}
 @stop

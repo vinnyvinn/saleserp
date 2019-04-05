@@ -28,12 +28,12 @@ class CreateAccountsTable extends Migration
             $table->enum('type', ['Analyst','Competitor', 'Customer', 'Investor', 'Partner', 'Press', 'Prospect', 'Reseller', 'Other'])->nullable();
             $table->timestamps();
         });
-        Schema::table('accounts', function (Blueprint $table) {
-            $table->foreign('user_id')
-            ->references('id')
-            ->on('users')
-            ->onDelete('cascade');
-        });
+//        Schema::table('accounts', function (Blueprint $table) {
+//            $table->foreign('user_id')
+//            ->references('id')
+//            ->on('users')
+//            ->onDelete('cascade');
+//        });
     }
 
     /**

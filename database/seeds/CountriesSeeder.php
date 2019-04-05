@@ -11,6 +11,7 @@ class CountriesSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('countries')->truncate();
         //Get all of the countries
         $countries = Countries::getList();
         foreach ($countries as $countryId => $country) {

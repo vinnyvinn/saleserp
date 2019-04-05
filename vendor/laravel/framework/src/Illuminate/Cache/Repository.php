@@ -182,7 +182,7 @@ class Repository implements CacheContract, ArrayAccess
      *
      * @param  string  $key
      * @param  mixed   $value
-     * @param  \DateTimeInterface|\DateInterval|float|int|null  $minutes
+     * @param  \DateTimeInterface|\DateInterval|float|int  $minutes
      * @return void
      */
     public function put($key, $value, $minutes = null)
@@ -552,7 +552,7 @@ class Repository implements CacheContract, ArrayAccess
         $duration = $this->parseDateInterval($duration);
 
         if ($duration instanceof DateTimeInterface) {
-            $duration = Carbon::now()->diffInSeconds(Carbon::createFromTimestamp($duration->getTimestamp()), false) / 60;
+            $duration = Carbon::now()->diffInRealSeconds($duration, false) / 60;
         }
 
         return (int) ($duration * 60) > 0 ? $duration : null;

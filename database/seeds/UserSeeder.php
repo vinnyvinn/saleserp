@@ -1,8 +1,11 @@
 <?php
 
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsc\Role;
+use Dsc\Support\Enum\UserStatus;
+use Dsc\User;
+
+
+
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -14,17 +17,16 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $admin = Role::where('name', 'Admin')->first();
-
+      //  $admin = Role::where('name', 'Admin')->first();
+        //User::truncate();
         User::create([
-            'first_name' => 'Vanguard',
-            'email' => 'admin@example.com',
+            'first_name' => 'Admin',
+            'email' => 'admin@admin.com',
             'username' => 'admin',
-            'password' => 'admin123',
+            'password' => '123456',
             'avatar' => null,
             'country_id' => null,
-            'role_id' => $admin->id,
-            'status' => UserStatus::ACTIVE
+             'status' => UserStatus::ACTIVE
         ]);
     }
 }

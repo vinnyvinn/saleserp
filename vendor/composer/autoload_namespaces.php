@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Webpatser\\Countries' => array($vendorDir . '/webpatser/laravel-countries/src'),
-    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Laracasts\\Presenter' => array($vendorDir . '/laracasts/presenter/src'),

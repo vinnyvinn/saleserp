@@ -40,11 +40,11 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        if (Auth::user()->hasRole('Admin')) {
+     //   if (Auth::user()->hasRole('Admin')) {
             return $this->adminDashboard();
-        }
+       // }
 
-        return $this->defaultDashboard();
+        //return $this->defaultDashboard();
     }
 
     /**

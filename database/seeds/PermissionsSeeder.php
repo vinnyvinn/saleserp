@@ -1,6 +1,6 @@
 <?php
 
-use Vanguard\Permission;
+
 use Vanguard\Role;
 use Illuminate\Database\Seeder;
 
@@ -14,7 +14,7 @@ class PermissionsSeeder extends Seeder
     public function run()
     {
         $adminRole = Role::where('name', 'Admin')->first();
-
+        Permission::truncate();
         $permissions[] = Permission::create([
             'name' => 'users.manage',
             'display_name' => 'Manage Users',

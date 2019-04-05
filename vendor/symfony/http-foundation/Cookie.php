@@ -41,7 +41,7 @@ class Cookie
      */
     public static function fromString($cookie, $decode = false)
     {
-        $data = array(
+        $data = [
             'expires' => 0,
             'path' => '/',
             'domain' => null,
@@ -49,7 +49,7 @@ class Cookie
             'httponly' => false,
             'raw' => !$decode,
             'samesite' => null,
-        );
+        ];
         foreach (explode(';', $cookie) as $part) {
             if (false === strpos($part, '=')) {
                 $key = trim($part);
@@ -93,7 +93,7 @@ class Cookie
      *
      * @throws \InvalidArgumentException
      */
-    public function __construct(string $name, string $value = null, $expire = 0, ?string $path = '/', string $domain = null, bool $secure = false, bool $httpOnly = true, bool $raw = false, string $sameSite = null)
+    public function __construct($name, $value = null, $expire = 0, $path = '/', $domain = null, $secure = false, $httpOnly = true, $raw = false, $sameSite = null)
     {
         // from PHP source code
         if (preg_match("/[=,; \t\r\n\013\014]/", $name)) {
@@ -120,15 +120,15 @@ class Cookie
         $this->domain = $domain;
         $this->expire = 0 < $expire ? (int) $expire : 0;
         $this->path = empty($path) ? '/' : $path;
-        $this->secure = $secure;
-        $this->httpOnly = $httpOnly;
-        $this->raw = $raw;
+        $this->secure = (bool) $secure;
+        $this->httpOnly = (bool) $httpOnly;
+        $this->raw = (bool) $raw;
 
         if (null !== $sameSite) {
             $sameSite = strtolower($sameSite);
         }
 
-        if (!in_array($sameSite, array(self::SAMESITE_LAX, self::SAMESITE_STRICT, null), true)) {
+        if (!\in_array($sameSite, [self::SAMESITE_LAX, self::SAMESITE_STRICT, null], true)) {
             throw new \InvalidArgumentException('The "sameSite" parameter value is not valid.');
         }
 
@@ -266,7 +266,7 @@ class Cookie
      */
     public function isCleared()
     {
-        return $this->expire < time();
+        return 0 !== $this->expire && $this->expire < time();
     }
 
     /**

@@ -34,7 +34,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->index('created_at');
+           // $table->index('created_at');
         });
     }
 

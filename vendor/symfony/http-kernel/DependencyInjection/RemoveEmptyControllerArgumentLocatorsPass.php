@@ -23,7 +23,7 @@ class RemoveEmptyControllerArgumentLocatorsPass implements CompilerPassInterface
 {
     private $resolverServiceId;
 
-    public function __construct(string $resolverServiceId = 'argument_resolver.service')
+    public function __construct($resolverServiceId = 'argument_resolver.service')
     {
         $this->resolverServiceId = $resolverServiceId;
     }
@@ -48,7 +48,7 @@ class RemoveEmptyControllerArgumentLocatorsPass implements CompilerPassInterface
                 // any methods listed for call-at-instantiation cannot be actions
                 $reason = false;
                 $action = substr(strrchr($controller, ':'), 1);
-                $id = substr($controller, 0, -1 - strlen($action));
+                $id = substr($controller, 0, -1 - \strlen($action));
                 $controllerDef = $container->getDefinition($id);
                 foreach ($controllerDef->getMethodCalls() as list($method)) {
                     if (0 === strcasecmp($action, $method)) {
